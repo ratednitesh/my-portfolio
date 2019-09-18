@@ -1,0 +1,600 @@
+html {
+	scroll-behavior: smooth;
+
+}
+
+*:focus,
+*:hover {
+	outline: none !important;
+	text-decoration: none !important;
+}
+
+
+/* BANNER */
+#background {
+	position: absolute;
+	top: 0;
+	right: 5px;
+	color: wihte;
+	text-align: right;
+	/* z-index: 1; */
+	overflow: hidden;
+	font-size: 12px;
+	color: rgb(17, 16, 16);
+}
+
+#banner-photo {
+	bottom: 0px;
+	left: 0px;
+	position: absolute;
+	width: 340px;
+	height: auto;
+}
+
+section.banner {
+	background-color: black;
+}
+
+#hi {
+	margin-top: 110px;
+}
+
+#name {
+	margin-top: -20px;
+	margin-left: -5px;
+	/* font-family: ; */
+	font-weight: 500;
+	letter-spacing: 4px;
+	color: rgb(223, 182, 46);
+}
+
+.role {
+	margin-top: -20px;
+	letter-spacing: 2px;
+	font-weight: 100;
+	font-size: 24px;
+}
+
+#fragment1 {
+
+	width: 0em;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 2px solid rgba(255, 255, 255, .75);
+	padding-right: 2px;
+	/* background-color: black; */
+	animation: frag1type 15s steps(50, end) 0s infinite, blinkTextCursor 500ms steps(44) infinite normal;
+
+}
+
+#fragment2 {
+	margin-top: -33px;
+	opacity: 0;
+	width: 0em;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 2px solid rgba(255, 255, 255, .75);
+	padding-right: 2px;
+	/* background-color: black; */
+	animation: frag2type 15s steps(50, end) 5s infinite, blinkTextCursor 500ms steps(44) infinite normal;
+
+}
+
+#fragment3 {
+	margin-top: -33px;
+	opacity: 0;
+	width: 0em;
+	white-space: nowrap;
+	overflow: hidden;
+	/* background-color: black; */
+	border-right: 2px solid rgba(255, 255, 255, .75);
+	padding-right: 2px;
+	padding-left: 2px;
+	animation: frag3type 15s steps(50, end) 10s infinite, blinkTextCursor 500ms steps(44) infinite normal;
+	;
+	color: rgb(255, 193, 7);
+	font-weight: 300;
+
+}
+
+@keyframes frag1type {
+
+	from {
+		width: 0;
+		border-right: 2px solid rgba(255, 255, 255, .75);
+		padding-right: 2px;
+		padding-left: 2px;
+	}
+
+	27% {
+		width: 10em;
+	}
+
+	33% {
+		width: 0;
+		border: none;
+		padding: none;
+	}
+
+	100% {
+		width: 0;
+		border: none;
+		padding: none;
+		opacity: 0;
+	}
+}
+
+
+@keyframes frag2type {
+
+	from {
+		width: 0;
+		opacity: 1;
+		border-right: 2px solid rgba(255, 255, 255, .75);
+		padding-right: 2px;
+		padding-left: 2px;
+
+	}
+
+	27% {
+		width: 10em;
+		opacity: 1;
+	}
+
+	33% {
+		width: 0;
+		opacity: 1;
+		border: none;
+		padding: none;
+	}
+
+	100% {
+		width: 0;
+		opacity: 0;
+		border: none;
+		padding: none;
+	}
+}
+
+@keyframes frag3type {
+
+	from {
+		width: 0;
+		opacity: 1;
+		border-right: 2px solid rgba(255, 255, 255, .75);
+		padding-right: 2px;
+		padding-left: 2px;
+
+	}
+
+	27% {
+		width: 13em;
+		opacity: 1;
+	}
+
+	33% {
+		width: 0;
+		opacity: 1;
+		border: none;
+		padding: none;
+	}
+
+	100% {
+		width: 0;
+		opacity: 0;
+		border: none;
+		padding: none;
+	}
+}
+
+@keyframes blinkTextCursor {
+	from {
+		border-right-color: rgba(255, 255, 255, .75);
+	}
+
+	to {
+		border-right-color: transparent;
+	}
+}
+
+
+.navigation {
+	bottom: 10px;
+	position: absolute;
+	/* background-color: gold; */
+
+}
+
+
+
+
+.navs:hover {
+	font-size: 40px;
+	transition: font-size 500ms;
+	color: rgb(179, 156, 26);
+}
+
+.navs {
+	font-size: 24px;
+	transition: font-size 250ms;
+	color: grey;
+
+}
+
+
+
+/* SKILLS */
+#skills {
+	background-color: rgb(70, 70, 73);
+}
+
+ul {
+	list-style: none;
+	/* Remove default bullets */
+}
+
+ul li::before {
+	content: "\2022";
+	/* Add content: \2022 is the CSS Code/unicode for a bullet */
+	color: gold;
+	/* Change the color */
+	font-weight: bold;
+	/* If you want it to be bold */
+	display: inline-block;
+	/* Needed to add space between the bullet and the text */
+	width: 1em;
+	/* Also needed for space (tweak if needed) */
+	margin-left: -1em;
+	/* Also needed for space (tweak if needed) */
+}
+
+.TextWrap {
+	float: right;
+	margin: 5px;
+}
+
+#design,
+#creativity {
+	display: block;
+	/* transition: height 1s, width 1s, padding 1s, visibility 1s,display 4s, opacity 0.5s ease-out; */
+}
+
+#develop-details,
+#design-details,
+#design-details-2,
+#creativity-details {
+	display: none;
+}
+
+#develop-box,
+#design-box,
+#design-box-2,
+#creativity-box {
+	width: 0%;
+	overflow: hidden;
+	max-height: 250px;
+	transition: height 1s, width 1s, padding 1s, visibility 1s, display 4s, opacity 0.5s ease-out;
+
+}
+
+
+#gear {
+
+	/* animation-name: ckw;  */
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	transform-origin: 50% 50%;
+	display: inline-block;
+	animation-timing-function: linear;
+}
+
+#gear2 {
+	/* animation-name: ccw; */
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	transform-origin: 50% 50%;
+	display: inline-block;
+	animation-timing-function: linear;
+
+	position: absolute;
+	top: -10px;
+	left: 130px;
+}
+
+@keyframes ckw {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes ccw {
+	0% {
+		transform: rotate(360deg);
+	}
+
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+
+/* Technologies */
+#technologies {
+	background-color: rgb(255, 255, 255);
+}
+
+/* #tech-img{
+	cursor: pointer;
+	transition: height 1s, width 1s, padding 1s, visibility 1s,display 4s, opacity 0.5s ease-out; 
+	width: 120px;
+}
+
+#tech-img:hover{
+	width: 200px;
+} */
+
+/* Projects */
+#projects {
+	background-color: rgb(41, 41, 40);
+}
+
+#slide-body {
+	height: 58vh;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.slider-container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	/* background-color: rgba(0, 0, 0, 0.788); */
+}
+
+.slider {
+	position: absolute;
+	display: flex;
+	height: 100%;
+	width: 600%;
+	animation: slide 10s infinite;
+	
+}
+
+.slider-1 {
+	position: absolute;
+	display: flex;
+	height: 100%;
+	width: 600%;
+	animation: slide-1 1s ;
+	
+}
+
+
+.slider-2 {
+	position: absolute;
+	display: flex;
+	left:-100%;
+	height: 100%;
+	width: 600%;
+	animation: slide-2 1s ;
+	
+}
+
+
+.slider-3 {
+	position: absolute;
+	display: flex;
+	left:-200%;
+	height: 100%;
+	width: 600%;
+	animation: slide-3 1s ;
+	
+}
+
+
+.slider-4 {
+	position: absolute;
+	display: flex;
+	height: 100%;
+	left:-300%;
+	width: 600%;
+	animation: slide-4 1s ;
+	
+}
+
+
+.slider-5 {
+	position: absolute;
+	display: flex;
+	height: 100%;
+	left:-400%;
+	width: 600%;
+	animation: slide-5 1s ;
+	
+}
+
+
+.slider-6 {
+	position: absolute;
+	display: flex;
+	height: 100%;
+	left:-500%;
+	width: 600%;
+	animation: slide-6 1s ;
+	
+}
+
+.slide > img:hover {
+	cursor: pointer;
+
+	
+}
+
+.pause-anime{
+		animation-play-state: paused;
+}
+
+
+.slide {
+	position: relative;
+	display: inline-block;
+	width: 25%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.slide img {
+	width: 60%;
+	height: auto;
+}
+
+
+@keyframes slide {
+	10% {
+		left: 0;
+	}
+
+	17% {
+		left: -100%;
+	}
+
+	30% {
+		left: -100%;
+	}
+
+	33% {
+		left: -200%;
+	}
+
+	45% {
+		left: -200%;
+	}
+
+	50% {
+		left: -300%;
+	}
+
+	60% {
+		left: -300%;
+	}
+
+	65% {
+		left: -400%;
+	}
+
+	78% {
+		left: -400%;
+	}
+
+	85% {
+		left: -500%;
+	}
+
+	95% {
+		left: -500%;
+	}
+
+	100% {
+		left: 0;	
+	}
+}
+
+@keyframes slide-1 {
+	10% {
+		left: -500%;
+	}
+
+	100% {
+		left: 0;	
+	}
+}
+@keyframes slide-2 {
+	10% {
+		left: -500%;
+	}
+
+	100% {
+		left: -100%;	
+	}
+}@keyframes slide-3 {
+	10% {
+		left: -500%;
+	}
+
+	100% {
+		left: -200%;	
+	}
+}@keyframes slide-4 {
+	10% {
+		left: -500%;
+	}
+
+	100% {
+		left: -300%;	
+	}
+}@keyframes slide-5 {
+	10% {
+		left: 0%;
+	}
+
+	100% {
+		left: -400%;	
+	}
+}@keyframes slide-6 {
+	10% {
+		left: 0;
+	}
+
+	100% {
+		left: -500%;	
+	}
+}
+.bg-a{
+	background-color: rgb(171, 226, 243);
+}
+
+
+.bg-b{
+	background-color: rgb(188, 243, 171);
+}
+
+.bg-c{
+	background-color: rgb(125, 210, 231);
+}
+
+.bg-d{
+	background-color: rgb(250, 168, 101);
+}
+
+.bg-e{
+	background-color: rgb(126, 201, 105);
+}
+
+.bg-f{
+	background-color: rgb(219, 240, 240);
+	
+}
+
+.thumbnails:hover{
+	cursor: pointer;
+	border-radius: 21px;
+	background-color: rgb(252, 244, 236);
+	
+}
+
+
+.card-header:hover{
+	cursor: pointer;
+	background-color: rgb(122, 122, 122);
+	color: white;
+}
